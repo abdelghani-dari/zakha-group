@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./input.css">
+  <link rel="stylesheet" href="./output.min.css">
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+  <!--===============================================================================================-->
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  <!--===============================================================================================-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+  <!--===============================================================================================-->
+  <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+  <!--===============================================================================================-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+
+  <script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
+  <script src="js/jquery.hover3d.js" ></script>
+  
+</head>
+
+<body id="home">
+
+
+
+
+  <!-- <section class="content content--c2">
+    <a href="#" class="tilter tilter--2">
+      <figure class="tilter__figure">
+        <img class="tilter__image" src="img/3.jpg" alt="img03" />
+        <div class="tilter__deco tilter__deco--shine"><div></div></div>
+        <div class="tilter__deco tilter__deco--overlay"></div>
+        <figcaption class="tilter__caption">
+          <h3 class="tilter__title">Helen Portland</h3>
+          <p class="tilter__description">Seattle</p>
+        </figcaption>
+        <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+          <path d="M20.5,20.5h260v375h-260V20.5z" />
+        </svg>
+      </figure>
+    </a>
+    <a href="#" class="tilter tilter--2">
+      <figure class="tilter__figure">
+        <img class="tilter__image" src="img/4.jpg" alt="img04" />
+        <div class="tilter__deco tilter__deco--shine"><div></div></div>
+        <div class="tilter__deco tilter__deco--overlay"></div>
+        <figcaption class="tilter__caption">
+          <h3 class="tilter__title">Kara Greene</h3>
+          <p class="tilter__description">New York</p>
+        </figcaption>
+        <svg class="tilter__deco tilter__deco--lines" viewBox="0 0 300 415">
+          <path d="M20.5,20.5h260v375h-260V20.5z" />
+        </svg>
+      </figure>
+    </a>
+  </section> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <nav id="navbar" class=" border-gray-200 absolute w-full">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="./index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="./images/logo.png" class="h-12 scale-125" alt="Flowbite Logo" />
+      </a>
+      <div class="flex md:order-2">
+
+        <div class="relative hidden md:block">
+          <ul class="flex space-x-4">
+            <li>
+              <a href="#"
+                class="inline-block w-10 h-10 border-2 border-zinc-100/50 rounded-full flex items-center justify-center text-white hover:bg-zinc-100/30 transition duration-300">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                class="inline-block w-10 h-10 border-2 border-zinc-100/50 rounded-full flex items-center justify-center text-white hover:bg-zinc-100/30 transition duration-300">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                class="inline-block w-10 h-10 border-2 border-zinc-100/50 rounded-full flex items-center justify-center text-white hover:bg-zinc-100/30 transition duration-300">
+                <i class="fab fa-linkedin-in font-bold"></i>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+        <button data-collapse-toggle="navbar-search" type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center scale-125 text-sm text-white rounded-lg md:hidden hover:bg-zinc-100/20 focus:outline-none focus:ring-2 focus:ring-gray-200"
+          aria-controls="navbar-search" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+            viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </button>
+      </div>
+      <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-search">
+        <div class="relative mt-3 md:hidden">
+
+          <ul class="flex justify-center space-x-4">
+            <li>
+              <a href="#"
+                class="inline-block w-10 h-10 border-2 border-zinc-100/50 rounded-full flex items-center justify-center text-white hover:bg-zinc-100/30 transition duration-300">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                class="inline-block w-10 h-10 border-2 border-zinc-100/50 rounded-full flex items-center justify-center text-white hover:bg-zinc-100/30 transition duration-300">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                class="inline-block w-10 h-10 border-2 border-zinc-100/50 rounded-full flex items-center justify-center text-white hover:bg-zinc-100/30 transition duration-300">
+                <i class="fab fa-linkedin-in font-bold"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <ul
+          class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-white md:space-x-8 md:flex-row md:mt-0 md:border-0 md:bg-transparent gap-y-4 md:gap-0">
+          <li>
+            <a href="#home"
+              class="block py-2 px-3 text-white/80 bg-[var(--secondary)] md:bg-transparent rounded hover:bg-[var(--primary)] md:hover:bg-transparent md:hover:text-zinc-100 md:p-0"
+              aria-current="page">Home</a>
+          </li>
+          <li>
+            <a href="#about"
+              class="block py-2 px-3 text-white/80 bg-[var(--secondary)] md:bg-transparent rounded hover:bg-[var(--primary)] md:hover:bg-transparent md:hover:text-zinc-100 md:p-0">About</a>
+          </li>
+          <li>
+            <a href="#services"
+              class="block py-2 px-3 text-white/80 bg-[var(--secondary)] md:bg-transparent rounded hover:bg-[var(--primary)] md:hover:bg-transparent md:hover:text-zinc-100 md:p-0">Services</a>
+          </li>
+          <li>
+            <a href="#contact"
+              class="block py-2 px-3 text-white/80 bg-[var(--secondary)] md:bg-transparent rounded hover:bg-[var(--primary)] md:hover:bg-transparent md:hover:text-zinc-100 md:p-0">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="h-screen bg-red-100/20">
+    <div class="top-bg">
+
+
+
+
+
+
+    </div>
+
+
+    <div class="main-image flex justify-center container">
+      <div class="main-image-direct js-tilt-2 block">
+        <a href="#main" class="opacity-75">
+          <img src="./images/arrow-down.png" class="arrow-bg-1 w-12" style="transform: scaleX(120%);" alt="">
+          <img src="./images/arrow-down.png" class="arrow-bg-2 w-12" style="transform: scaleX(120%);" alt="">
+        </a>
+        <img src="./images/shadow.png" class="shadow-bg w-full" alt="">
+        <img src="./images/control.jpg" class="w-full h-full object-cover border-zinc-200/50 border-2 rounded-3xl border-b-0"
+          alt="">
+      </div>
+    </div>
+
+
+  </div>
+  </div>
+  <br><br>
+  <span id="main"></span>
+  <br><br>
+  <div style="transform: translateX(-71%) translateY(-15%);"
+    class="animation-container w-screen absolute -z-10 left-1/2 ">
+    <div class="circle hidden"></div>
+    <div class="circle"></div>
+    <div class="circle hidden"></div>
+    <div class="circle hidden"></div>
+    <div class="circle hidden"></div>
+    <div class="circle"></div>
+  </div>
+
+
+
+
+
+  <div class="flex my-20 mb-32 justify-center">
+    <div data-aos="zoom-in" class="flex text-center md:text-left  justify-between flex-col md:flex-row gap-y-32 main-titles w-[95%] lg:w-[85%] p-12 rounded-3xl box tilt" data-tilt-max="4">
+
+      <div class="the-title">
+        <h1 class="text-7xl text-white font-bold uppercase">Zakha</h1>
+        <h1 class="text-4xl font-bold text- uppercase text-[var(--dark)] opacity-70 ">Group</h1>
+      </div>
+      <div class="the-slug flex md:block md:justify-center -translate-y-7 md:w-96">
+
+        <img src="./images/quotes.png" class="w-40 opacity-60" alt="">
+        <h1 class="text-3xl font-semibold text-white">Empowering Your Success: Consult Zakha Group Today</h1>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="flex justify-center mt-10" id="about">
+
+    <div class="text text-lg leading-8 bg-zinc-100/60 p-12 rounded-3xl " style="width: 85%;">
+      <h4 class="text-xl font-semibold text-zinc-800 uppercase mb-4">About Zakha Group</h4>
+      <p class="leading-8">
+        Welcome to Zakha Group, your premier partner in the procurement of various commodities. With a dedicated focus
+        on sourcing high-quality materials, including copper cathodes and Precious Metals such as Gold, Silver, and
+        Platinum, we stand as a beacon of reliability and excellence in the industry. Precious metals, renowned for
+        their stability, serve as safe-haven assets, particularly sought after during periods of economic turbulence.
+
+        At Zakha Group, we prioritize understanding your unique requirements comprehensively. Our team works diligently
+        to optimize your purchasing strategy across a wide spectrum of commercial products. When you choose to
+        collaborate with us, you not only benefit from our extensive industry experience but also gain access to our
+        formidable buying power and sterling reputation as a premier sourcing partner. We offer direct, cost-effective
+        access to a diverse range of products, including those that are typically challenging to procure. Trust us to
+        leverage our integrated services, ranging from small-scale to large-scale supply solutions, to craft a tailored,
+        single-source solution that precisely aligns with your needs and objectives.
+      </p>
+      <p class="my-3">
+        Our unparalleled capabilities in comparator sourcing set us apart:
+      </p>
+    </div>
+  </div>
+
+
+
+
+  <div style="transform: translateX(-70%) translateY(4%);" class="animation-container hidden md:block w-full absolute -z-10 left-1/2 ">
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle "></div>
+    <div class="circle"></div>
+
+
+
+  </div>
+  <span id="services"></span>
+  <div class="cards mt-72">
+    <div class="flex justify-center">
+      <div class="cards-direct grid grid-cols-1 lg:grid-cols-3 gap-16">
+
+        <!-- card -->
+        <div class="card w-full">
+          <div class="top-card shadow-xl js-tilt-01 bg-white rounded-3xl py-12 pt-8 mb-24 relative">
+            <div class="icon-img p-8 flex justify-center">
+              <img src="./images/card-icon (1).png" class="h-40" alt="">
+            </div>
+            <h4 class="text-xl font-semibold text-center text-zinc-800">Quality-Centric Sourcing</h4>
+            <img src="./images/shadow-3.png" class="shadow-bg-2 w-full bg-red left-0" alt="">
+          </div>
+
+          <div class="text-5xl font-bold  mb-7 text-white">
+            <i class="fa-solid fa-check font-bold text-[var(--secondary)]"></i>
+            <span class="tracking-wider">01</span>
+          </div>
+
+          <div class="card-text text-white border-t border-zinc-100/30 pt-5">
+
+            <div class="card-content leading-8">
+              Zakha Group specializes in direct comparator sourcing from industry innovators, wholesalers, and local
+              distributors. This approach guarantees access to the finest quality products, meeting stringent standards
+              and ensuring client satisfaction.
+            </div>
+          </div>
+        </div>
+
+
+        <!-- card -->
+        <div class="card w-full">
+          <div class="top-card shadow-xl js-tilt-01 bg-white rounded-3xl py-12 pt-8 mb-24 relative">
+            <div class="icon-img p-8 flex justify-center">
+              <img src="./images/card-icon (2).png" class="h-40" alt="">
+            </div>
+            <h4 class="text-xl font-semibold text-center text-zinc-800">Tailored Sourcing Solutions</h4>
+            <img src="./images/shadow-3.png" class="shadow-bg-2 w-full bg-red left-0" alt="">
+          </div>
+
+          <div class="text-5xl font-bold  mb-7 text-white">
+            <i class="fa-solid fa-check font-bold text-[var(--secondary)]"></i>
+            <span class="tracking-wider">02</span>
+          </div>
+
+          <div class="card-text text-white border-t border-zinc-100/30 pt-5">
+
+            <div class="card-content leading-8">
+              Whether your project demands central or local sourcing, Zakha Group customizes its approach to meet your
+              specific requirements. Our flexible sourcing strategies ensure that each project receives tailored
+              solutions, optimizing efficiency and effectiveness.
+            </div>
+          </div>
+        </div>
+
+
+        <!-- card -->
+        <div class="card w-full">
+          <div class="top-card shadow-xl js-tilt-01 bg-white rounded-3xl py-12 pt-8 mb-24 relative">
+            <div class="icon-img p-8 flex justify-center">
+              <img src="./images/card-icon (3).png" class="h-40" alt="">
+            </div>
+            <h4 class="text-xl font-semibold text-center text-zinc-800">Global Competitive Advantage</h4>
+            <img src="./images/shadow-3.png" style="transform: rotateY(180deg);"
+              class="shadow-bg-2 w-full bg-red left-0" alt="">
+          </div>
+
+          <div class="text-5xl font-bold  mb-7 text-white">
+            <i class="fa-solid fa-check font-bold text-[var(--secondary)]"></i>
+            <span class="tracking-wider">03</span>
+          </div>
+
+          <div class="card-text text-white border-t border-zinc-100/30 pt-5">
+
+            <div class="card-content leading-8">
+              With an expansive international network, Zakha Group excels in sourcing major trade commodities at
+              competitive prices. Our global reach enables us to secure optimal value for our clients, delivering
+              cost-effective solutions without compromising on quality or reliability.
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+ -->
+
+
+
+
+
+
+
+
+  <div id="contact" style="scale: 95%;" class="contact1">
+    <div class="container-contact1 border-2 border-zinc-200/10 rounded-3xl py-12 my-16">
+      <div class="contact1-pic gap-12 md:gap-0 md:block flex items-center" >
+        <img src="images/img-01.png" class="h-56  js-tilt" data-tilt alt="IMG">
+        
+        <div class="content">
+          <!-- Info-1 -->
+          <div data-aos="fade-right" data-aos-anchor-placement="top-bottom" class="info js-tilt-3 inline-block w-full" style="cursor: default;" data-tilt>
+              <!-- <i class="fas fa-mobile-alt"></i> -->
+              <h4 class="inline-block">COMMERCIAL REGISTRATION NUMBER :
+                  <br>
+                  <span> 608303 </span></h4>
+          </div>
+          <!-- Info-1 -->
+          <a data-aos="fade-right" data-aos-anchor-placement="top-bottom" href="tel:+212645783691" class="info js-tilt-3 inline-block w-full" style="cursor: pointer;" data-tilt>
+              <i class="fas fa-mobile-alt"></i>
+              <h4 class="inline-block">PHONE :
+                  <br>
+                  <span>+212645783691 </span></h4>
+          </a>
+          <!-- Info-2 -->
+          <a data-aos="fade-right"  data-aos-delay="350" data-aos-anchor-placement="top-bottom" href="mailto:contact@zakhagroup.com" class="info js-tilt-3 inline-block w-full" style="cursor: pointer;" data-tilt>
+              <i class="far fa-envelope"></i>
+              <h4 class="inline-block">EMAIL :
+                  <br>
+                  <span>contact@zakhagroup.com</span></h4>
+          </a>
+          <!-- Info-3 -->
+          <div  data-aos="fade-right" data-aos-delay="700" data-aos-anchor-placement="top-bottom" class="info js-tilt-3 inline-block w-full" style="cursor: default;" data-tilt>
+              <i class="fas fa-map-marker-alt"></i>
+              <h4 class="inline">ADDRESS :<br>
+                  <span>BD Abdelmoumen IMM 82 ETG 2 N 4 Palmier, Casablanca.MAROC</span></h4>
+          </div>
+      </div>
+
+
+      </div>
+
+      <form class="contact1-form validate-form">
+        <span class="contact1-form-title">
+          Get in touch
+        </span>
+
+        <div class="wrap-input1 validate-input" data-validate="Name is required">
+          <input class="input1" type="text" name="name" placeholder="Name">
+          <span class="shadow-input1"></span>
+          <span class="symbol-input100">
+            <i class="fa fa-user" aria-hidden="true"></i>
+          </span>
+        </div>
+
+        <div class="wrap-input1 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+          <input class="input1" type="text" name="email" placeholder="Email">
+          <span class="shadow-input1"></span>
+          <span class="symbol-input100">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+          </span>
+        </div>
+
+        <div class="wrap-input1 validate-input" data-validate="Subject is required">
+          <input class="input1" type="text" name="subject" placeholder="Subject">
+          <span class="shadow-input1"></span>
+          <span class="symbol-input100">
+            <i class="fa fa-circle-info" aria-hidden="true"></i>
+          </span>
+        </div>
+
+        <div class="wrap-input1 validate-input" data-validate="Message is required">
+          <textarea class="input1" name="message" placeholder="Message"></textarea>
+          <span class="shadow-input1"></span>
+        </div>
+
+        <div class="container-contact1-form-btn">
+          <button class="contact1-form-btn">
+            <span>
+              Send Email
+              <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+            </span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="footer flex justify-center bg-[var(--dark)] text-white py-5">
+<div class="copyright w-[85%] text-sm">
+  © Copyright 2024 Zakha Energies. All rights reserved.
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<script>
+  (function() {
+    var tiltSettings = [
+    {},
+    {
+      movement: {
+        imgWrapper : {
+          translation : {x: 10, y: 10, z: 30},
+          rotation : {x: 0, y: -10, z: 0},
+          reverseAnimation : {duration : 200, easing : 'easeOutQuad'}
+        },
+        lines : {
+          translation : {x: 10, y: 10, z: [0,70]},
+          rotation : {x: 0, y: 0, z: -2},
+          reverseAnimation : {duration : 2000, easing : 'easeOutExpo'}
+        },
+        caption : {
+          rotation : {x: 0, y: 0, z: 2},
+          reverseAnimation : {duration : 200, easing : 'easeOutQuad'}
+        },
+        overlay : {
+          translation : {x: 10, y: -10, z: 0},
+          rotation : {x: 0, y: 0, z: 2},
+          reverseAnimation : {duration : 2000, easing : 'easeOutExpo'}
+        },
+        shine : {
+          translation : {x: 100, y: 100, z: 0},
+          reverseAnimation : {duration : 200, easing : 'easeOutQuad'}
+        }
+      }
+    },
+    {
+      movement: {
+        imgWrapper : {
+          rotation : {x: -5, y: 10, z: 0},
+          reverseAnimation : {duration : 900, easing : 'easeOutCubic'}
+        },
+        caption : {
+          translation : {x: 30, y: 30, z: [0,40]},
+          rotation : {x: [0,15], y: 0, z: 0},
+          reverseAnimation : {duration : 1200, easing : 'easeOutExpo'}
+        },
+        overlay : {
+          translation : {x: 10, y: 10, z: [0,20]},
+          reverseAnimation : {duration : 1000, easing : 'easeOutExpo'}
+        },
+        shine : {
+          translation : {x: 100, y: 100, z: 0},
+          reverseAnimation : {duration : 900, easing : 'easeOutCubic'}
+        }
+      }
+    },
+    {
+      movement: {
+        imgWrapper : {
+          rotation : {x: -5, y: 10, z: 0},
+          reverseAnimation : {duration : 50, easing : 'easeOutQuad'}
+        },
+        caption : {
+          translation : {x: 20, y: 20, z: 0},
+          reverseAnimation : {duration : 200, easing : 'easeOutQuad'}
+        },
+        overlay : {
+          translation : {x: 5, y: -5, z: 0},
+          rotation : {x: 0, y: 0, z: 6},
+          reverseAnimation : {duration : 1000, easing : 'easeOutQuad'}
+        },
+        shine : {
+          translation : {x: 50, y: 50, z: 0},
+          reverseAnimation : {duration : 50, easing : 'easeOutQuad'}
+        }
+      }
+    },
+    {
+      movement: {
+        imgWrapper : {
+          translation : {x: 0, y: -8, z: 0},
+          rotation : {x: 3, y: 3, z: 0},
+          reverseAnimation : {duration : 1200, easing : 'easeOutExpo'}
+        },
+        lines : {
+          translation : {x: 15, y: 15, z: [0,15]},
+          reverseAnimation : {duration : 1200, easing : 'easeOutExpo'}
+        },
+        overlay : {
+          translation : {x: 0, y: 8, z: 0},
+          reverseAnimation : {duration : 600, easing : 'easeOutExpo'}
+        },
+        caption : {
+          translation : {x: 10, y: -15, z: 0},
+          reverseAnimation : {duration : 900, easing : 'easeOutExpo'}
+        },
+        shine : {
+          translation : {x: 50, y: 50, z: 0},
+          reverseAnimation : {duration : 1200, easing : 'easeOutExpo'}
+        }
+      }
+    },
+    {
+      movement: {
+        lines : {
+          translation : {x: -5, y: 5, z: 0},
+          reverseAnimation : {duration : 1000, easing : 'easeOutExpo'}
+        },
+        caption : {
+          translation : {x: 15, y: 15, z: 0},
+          rotation : {x: 0, y: 0, z: 3},
+          reverseAnimation : {duration : 1500, easing : 'easeOutElastic', elasticity : 700}
+        },
+        overlay : {
+          translation : {x: 15, y: -15, z: 0},
+          reverseAnimation : {duration : 500,easing : 'easeOutExpo'}
+        },
+        shine : {
+          translation : {x: 50, y: 50, z: 0},
+          reverseAnimation : {duration : 500, easing : 'easeOutExpo'}
+        }
+      }
+    },
+    {
+      movement: {
+        imgWrapper : {
+          translation : {x: 5, y: 5, z: 0},
+          reverseAnimation : {duration : 800, easing : 'easeOutQuart'}
+        },
+        caption : {
+          translation : {x: 10, y: 10, z: [0,50]},
+          reverseAnimation : {duration : 1000, easing : 'easeOutQuart'}
+        },
+        shine : {
+          translation : {x: 50, y: 50, z: 0},
+          reverseAnimation : {duration : 800, easing : 'easeOutQuart'}
+        }
+      }
+    },
+    {
+      movement: {
+        lines : {
+          translation : {x: 40, y: 40, z: 0},
+          reverseAnimation : {duration : 1500, easing : 'easeOutElastic'}
+        },
+        caption : {
+          translation : {x: 20, y: 20, z: 0},
+          rotation : {x: 0, y: 0, z: -5},
+          reverseAnimation : {duration : 1000, easing : 'easeOutExpo'}
+        },
+        overlay : {
+          translation : {x: -30, y: -30, z: 0},
+          rotation : {x: 0, y: 0, z: 3},
+          reverseAnimation : {duration : 750, easing : 'easeOutExpo'}
+        },
+        shine : {
+          translation : {x: 100, y: 100, z: 0},
+          reverseAnimation : {duration : 750, easing : 'easeOutExpo'}
+        }
+      }
+    }];
+
+    function init() {
+      var idx = 0;
+      [].slice.call(document.querySelectorAll('a.tilter')).forEach(function(el, pos) { 
+        idx = pos%2 === 0 ? idx+1 : idx;
+        new TiltFx(el, tiltSettings[idx-1]);
+      });
+    }
+
+    // Preload all images.
+    imagesLoaded(document.querySelector('main'), function() {
+      document.body.classList.remove('loading');
+      init();
+    });
+
+    // REMOVE THIS!
+    // For Demo purposes only. Prevent the click event.
+    [].slice.call(document.querySelectorAll('a[href="#"]')).forEach(function(el) {
+      el.addEventListener('click', function(ev) { ev.preventDefault(); });
+    });
+
+    var pater = document.querySelector('.pater'),
+      paterSVG = pater.querySelector('.pater__svg'),
+      pathEl = paterSVG.querySelector('path'),
+      paths = {default: pathEl.getAttribute('d'), active: paterSVG.getAttribute('data-path-hover')};
+
+    pater.addEventListener('mouseenter', function() {
+      anime.remove(pathEl);
+      anime({
+        targets: pathEl,
+        d: paths.active,
+        duration: 400,
+        easing: 'easeOutQuad'
+      });
+    });
+
+    pater.addEventListener('mouseleave', function() {
+      anime.remove(pathEl);
+      anime({
+        targets: pathEl,
+        d: paths.default,
+        duration: 400,
+        easing: 'easeOutExpo'
+      });
+    });
+  })();
+  </script>
+
+
+
+
+  <!--===============================================================================================-->
+  <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+  <!--===============================================================================================-->
+  <script src="vendor/bootstrap/js/popper.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  <!--===============================================================================================-->
+  <script src="vendor/select2/select2.min.js"></script>
+  <!--===============================================================================================-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script src="vendor/tilt/tilt.jquery.min.js"></script>
+  <script>
+    $('.js-tilt').tilt({
+      scale: 1.1
+    })
+    $('.js-tilt-01').tilt({
+      scale: 1.03,
+      speed: 2000,
+      maxTilt: 4
+    })
+    $('.js-tilt-2').tilt({
+      scale: 1.001,
+      speed: 3000,
+      maxTilt: .4
+    })
+    $('.js-tilt-3').tilt({
+      scale: 1.05,
+      speed: 3000,
+      maxTilt: 5
+    })
+  </script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-23581568-13');
+  </script>
+  <script>
+    AOS.init();
+  </script>
+  <!--===============================================================================================-->
+  <script src="./script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+</body>
+
+</html>
